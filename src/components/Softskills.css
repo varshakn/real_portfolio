@@ -1,0 +1,62 @@
+#softskills {
+    margin-top: 50px;
+    padding: 40px 0;
+    background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec); /* Light gradient background */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .softskills-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #0d0000;
+  }
+  
+  .softskills-list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 40px; /* Space between each skill */
+    max-width: 80%; /* Set maximum width */
+    margin: 0 auto; /* Center the list horizontally */
+  }
+  
+  .softskill-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spread content evenly */
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .softskill-image {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .speech-bubble {
+    flex: 1;
+    background-color: darkblue;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .speech-bubble h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .speech-bubble p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+  }

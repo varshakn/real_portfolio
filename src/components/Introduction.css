@@ -1,0 +1,50 @@
+/* Introduction Section */
+#introduction {
+    width: 100%;
+    height: auto;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    background: linear-gradient(to right, black, darkblue);
+    color: #ffffff;
+    text-align: center; /* Align text to the center */
+    padding: 2rem;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+}
+
+.intro-content {
+    max-width: 800px;
+    width: 100%;
+}
+
+.intro-name {
+    font-family: 'Cooper Black', serif;
+    font-size: 4.5rem;
+    color: #4a90e2;
+    margin: 0 0 1rem 0;
+    animation: typing 3s steps(30, end) forwards;
+    overflow: hidden;
+    border-right: none;
+    white-space: normal;
+}
+
+.intro-paragraph {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+    opacity: 1;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}

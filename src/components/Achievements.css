@@ -1,0 +1,65 @@
+/* src/components/Achievements.css */
+.achievements-section {
+    padding: 40px 20px; /* Padding around the section */
+    background-color: #f9f9f9; /* Light grey background for contrast */
+    color: #333333; /* Dark grey text color */
+    text-align: center; /* Center align text */
+  }
+  
+  .achievements-title {
+    font-size: 2.5rem; /* Title size */
+    margin-bottom: 30px; /* Space below the title */
+    font-family: 'Cooper Black', sans-serif; /* Custom font for title */
+    color: #333333; /* Dark grey color for the title */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+  }
+  
+  .achievements-container {
+    display: flex; /* Flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
+  }
+  
+  .achievement-card {
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 10px; /* Rounded corners for card */
+    padding: 20px; /* Padding inside card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+    width: calc(100% - 40px); /* Full width minus padding */
+    max-width: 300px; /* Max width for card */
+    text-align: left; /* Align text to the left */
+    border: 2px solid transparent; /* Placeholder for border */
+    border-image-slice: 1; /* Ensure border gradient is applied */
+    border-image-source: linear-gradient(to right, #1a2a6c, #0c1445); /* Dark blue to black gradient */
+  }
+  
+  .achievement-card h3 {
+    font-size: 1.5rem; /* Title size for achievement */
+    margin-bottom: 10px; /* Space below title */
+    color: #1e3a8a; /* Dark blue color for the title */
+  }
+  
+  .achievement-card p {
+    font-size: 1rem; /* Font size for description */
+    color: #666666; /* Grey color for the description */
+  }
+  
+  .achievement-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .achievement-card {
+      width: calc(50% - 40px); /* Half width minus padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .achievement-card {
+      width: calc(100% - 40px); /* Full width minus padding for mobile screens */
+    }
+  }
+  

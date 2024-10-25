@@ -1,0 +1,99 @@
+/* Experience Section */
+.experience-section {
+    padding: 20px;
+    background-color: whitesmoke; /* Light background to contrast with dark elements */
+    margin-bottom: 30px;
+    margin-right: 1000px;
+    max-width: 1495px;
+    box-sizing: border-box;
+  }
+  
+  .experience-section h2 {
+    color: #000000 !important; /* Black color for the heading, using !important to override any other styles */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: 'Cooper Black', sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    color: #000000; /* Changed to black for the heading */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: 'Cooper Black', sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  .experience-square {
+    background: linear-gradient(135deg, #0630a1, #0f172a); /* Dark blue gradient */
+    border-radius: 15px;
+    padding: 25px;
+    cursor: pointer;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: 1350px;
+  }
+  
+  .experience-square:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .experience-square.active {
+    background: linear-gradient(135deg, darkblue, black); /* Even darker gradient when active */
+  }
+  
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .timeline {
+    font-size: 0.95rem;
+    color: #93c5fd; /* Light blue color for timeline */
+    font-weight: bold;
+  }
+  
+  /* Experience Details */
+  .experience-details {
+    margin-top: 15px;
+    background: linear-gradient(135deg, #051f68, #0f172a); /* Dark blue gradient background */
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .experience-details p {
+    margin: 0;
+    padding: 8px 0;
+    line-height: 1.6;
+  }
+  
+  /* Show the details of the experience when the experience-square is active */
+  .experience-square.active .experience-details {
+    display: block;
+    opacity: 1;
+  }
+  
+  /* Add a subtle animation for the details */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .experience-square.active .experience-details {
+    animation: fadeIn 0.4s ease-out forwards;
+  }

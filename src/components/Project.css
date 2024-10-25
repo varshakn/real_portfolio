@@ -1,0 +1,77 @@
+/* src/components/Project.css */
+.projects-section {
+    padding: 5rem 0; /* Generous padding for the section */
+    background: linear-gradient(to bottom, darkblue, black); /* Gradient background for a striking effect */
+    color: white; /* Text color */
+  }
+  
+  h2 {
+    text-align: center; /* Centered heading */
+    margin-bottom: 2rem; /* Space below the heading */
+    color: white; /* Heading color */
+  }
+  
+  .projects-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid for project boxes */
+    gap: 1.5rem; /* Space between project boxes */
+    width: 90%; /* Set width */
+    max-width: 1000px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Center container */
+  }
+  
+  .project-box {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for project boxes */
+    aspect-ratio: 1 / 1; /* Square aspect ratio */
+    padding: 0.5rem; /* Padding for boxes */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex; /* Flexbox for centering content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center text */
+    font-size: 0.9rem; /* Font size for project name */
+    line-height: 1.2; /* Line height for better readability */
+  }
+  
+  .project-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+  }
+  
+  .project-box.active {
+    background-color: rgba(255, 255, 255, 0.2); /* Highlight active project box */
+  }
+  
+  .project-details-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for details */
+    color: white; /* Text color for details */
+    padding: 2rem; /* Padding for details */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 2rem; /* Space above details */
+    width: 90%; /* Set width */
+    max-width: 1000px; /* Maximum width for details */
+    margin-left: auto; /* Centering */
+    margin-right: auto; /* Centering */
+  }
+  
+  .project-details {
+    font-size: 0.9rem; /* Font size for project details */
+    line-height: 1.6; /* Line height for better readability */
+  }
+  
+  @media (max-width: 768px) {
+    .projects-container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust for medium screens */
+      gap: 1rem; /* Reduced gap */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .projects-container {
+      grid-template-columns: 1fr; /* Stack boxes on smaller screens */
+    }
+  }
+  

@@ -1,0 +1,65 @@
+#skills {
+  margin-top: 70px; /* Space above the skills section */
+  background: linear-gradient(to bottom right, #14044d, #040024); /* Gradient background for a fresh look */
+  padding: 40px 0; /* Padding for the section */
+  position: relative; /* Positioning context for the dino */
+  border-radius: 15px; /* Rounded corners for the section */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.skills-title {
+  text-align: center;
+  font-size: 2.5rem; /* Larger font size for title */
+  margin-bottom: 20px; /* Space below the title */
+  color: #ffffff; /* Title color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle text shadow for better readability */
+}
+
+.skills-list {
+  display: grid; /* Use grid layout for better spacing */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Responsive grid */
+  gap: 40px 20px; /* Space between boxes */
+  max-width: 95%; /* Set max-width */
+  margin: 0 auto; /* Center the list horizontally */
+  padding: 20px; /* Padding around the list */
+}
+
+.skills-box {
+  background-color: #ffffff; /* Light background for boxes */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding for boxes */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  display: flex; /* Flexbox for centering content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center; /* Center text */
+  font-size: 1.1rem; /* Font size for project name */
+  line-height: 1.4; /* Line height for better readability */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effects */
+  top: 20px;
+  padding-top: 40px;
+}
+
+.skills-box:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.dino-image {
+  width: 50px; /* Dino size */
+  position: absolute; /* Positioning for jumping effect */
+  bottom: 90px; /* Position above the boxes */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center adjustment */
+  transition: transform 0.3s ease; /* Smooth jumping animation */
+  z-index: 10;
+}
+
+.jump {
+  transform: translateY(-25px); /* Adjust jump height */
+}
+
+.skills-box img {
+  width: 40px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+}
