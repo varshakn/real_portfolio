@@ -74,4 +74,51 @@
       grid-template-columns: 1fr; /* Stack boxes on smaller screens */
     }
   }
-  
+
+  /* Responsive layout for large screens */
+@media (min-width: 1200px) {
+  .projects-container {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* More space for larger screens */
+  }
+
+  .project-box {
+      font-size: 1rem; /* Increase font size for larger screens */
+  }
+}
+
+/* Responsive layout for medium screens */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .projects-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for medium screens */
+      gap: 1.5rem; /* Maintain gap */
+  }
+
+  .project-box {
+      font-size: 0.9rem; /* Adjust font size */
+  }
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 767px) {
+  .projects-container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust for smaller screens */
+      gap: 1rem; /* Reduced gap */
+  }
+
+  .project-box {
+      font-size: 0.8rem; /* Further adjust font size */
+      padding: 0.4rem; /* Adjust padding */
+  }
+}
+
+/* Responsive layout for extra small screens */
+@media (max-width: 480px) {
+  .projects-container {
+      grid-template-columns: 1fr; /* Stack boxes on smaller screens */
+  }
+
+  .project-box {
+      font-size: 0.7rem; /* Further reduce font size */
+      padding: 0.3rem; /* Further adjust padding */
+  }
+}

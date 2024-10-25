@@ -75,3 +75,59 @@
     margin: 5px 10px 5px 0;
   }
 }
+
+/* Responsive layout for large screens */
+@media (min-width: 1200px) {
+  .portfolio-text {
+      font-size: 1.5rem; /* Increase font size for large screens */
+  }
+
+  .nav-menu li a {
+      font-size: 1rem; /* Increase link font size */
+  }
+}
+
+/* Responsive layout for medium screens */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .portfolio-text {
+      font-size: 1.3rem; /* Adjust font size for medium screens */
+  }
+
+  .nav-menu li a {
+      font-size: 0.95rem; /* Adjust link font size */
+  }
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 767px) {
+  .navbar {
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align items to the start */
+  }
+
+  .portfolio-text {
+      max-width: 100%; /* Full width on small screens */
+      margin-bottom: 10px; /* Space below the text */
+      margin-left: 0; /* Reset margin */
+  }
+
+  .nav-menu {
+      width: 100%; /* Full width for the menu */
+      justify-content: center; /* Center the menu items */
+  }
+
+  .nav-menu li {
+      margin: 5px 10px; /* Adjust margin for menu items */
+  }
+}
+
+/* Responsive layout for extra small screens */
+@media (max-width: 480px) {
+  .portfolio-text {
+      font-size: 1rem; /* Further reduce font size */
+  }
+
+  .nav-menu li a {
+      font-size: 0.85rem; /* Further reduce link font size */
+  }
+}

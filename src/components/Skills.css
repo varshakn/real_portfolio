@@ -63,3 +63,66 @@
   width: 40px; /* Adjust width as needed */
   height: 40px; /* Adjust height as needed */
 }
+
+/* Responsive layout for large screens */
+@media (min-width: 1200px) {
+  .skills-title {
+      font-size: 3rem; /* Increase title size for large screens */
+  }
+
+  .skills-list {
+      gap: 50px; /* Increase gap for large screens */
+  }
+
+  .skills-box {
+      font-size: 1.2rem; /* Increase font size for boxes */
+  }
+}
+
+/* Responsive layout for medium screens */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .skills-title {
+      font-size: 2rem; /* Adjust title size */
+  }
+
+  .skills-list {
+      gap: 30px; /* Adjust gap */
+  }
+
+  .skills-box {
+      font-size: 1.1rem; /* Adjust font size for boxes */
+  }
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 767px) {
+  .skills-title {
+      font-size: 1.5rem; /* Further adjust title size */
+  }
+
+  .skills-list {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid for smaller screens */
+      gap: 20px; /* Reduce gap */
+  }
+
+  .skills-box {
+      font-size: 1rem; /* Further adjust font size for boxes */
+      padding: 15px; /* Adjust padding */
+  }
+}
+
+/* Responsive layout for extra small screens */
+@media (max-width: 480px) {
+  .skills-title {
+      font-size: 1.2rem; /* Further reduce title size */
+  }
+
+  .skills-list {
+      grid-template-columns: 1fr; /* Stack boxes on very small screens */
+  }
+
+  .skills-box {
+      font-size: 0.9rem; /* Further reduce font size for boxes */
+      padding: 10px; /* Further adjust padding */
+  }
+}

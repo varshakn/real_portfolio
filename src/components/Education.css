@@ -62,3 +62,88 @@ section {
     color: #ffffff; /* White text for better contrast */
     transform: rotateY(180deg);
   }
+
+/* Responsive layout for large screens */
+@media (min-width: 1200px) {
+  .education-title {
+      font-size: 2.5rem; /* Increase title size for large screens */
+  }
+
+  .education-container {
+      gap: 40px; /* Increase gap for large screens */
+  }
+
+  .education-item {
+      width: 300px; /* Increase item size */
+      height: 300px; /* Increase item size */
+  }
+
+  .education-front,
+  .education-back {
+      padding: 40px; /* Increase padding */
+      font-size: 1.1rem; /* Increase font size */
+  }
+}
+
+/* Responsive layout for medium screens */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .education-title {
+      font-size: 2rem; /* Adjust title size */
+  }
+
+  .education-container {
+      gap: 30px; /* Adjust gap */
+  }
+
+  .education-item {
+      width: 220px; /* Adjust item size */
+      height: 220px; /* Adjust item size */
+  }
+
+  .education-front,
+  .education-back {
+      padding: 30px; /* Adjust padding */
+      font-size: 1rem; /* Adjust font size */
+  }
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 767px) {
+  .education-title {
+      font-size: 1.5rem; /* Further adjust title size */
+  }
+
+  .education-container {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items */
+  }
+
+  .education-item {
+      width: 100%; /* Full width */
+      max-width: 300px; /* Max width for items */
+      height: auto; /* Auto height */
+  }
+
+  .education-front,
+  .education-back {
+      padding: 20px; /* Further adjust padding */
+      font-size: 0.9rem; /* Further adjust font size */
+  }
+}
+
+/* Responsive layout for extra small screens */
+@media (max-width: 480px) {
+  .education-title {
+      font-size: 1.2rem; /* Further adjust title size */
+  }
+
+  .education-item {
+      max-width: 100%; /* Full width */
+      padding: 15px; /* Further adjust padding */
+  }
+
+  .education-front,
+  .education-back {
+      font-size: 0.8rem; /* Further adjust font size */
+  }
+}

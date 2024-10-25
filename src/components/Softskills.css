@@ -60,3 +60,73 @@
     line-height: 1.6;
     color: #fff;
   }
+
+/* Responsive layout for large screens */
+@media (min-width: 1200px) {
+  .softskills-title {
+      font-size: 3rem; /* Increase title size for large screens */
+  }
+
+  .softskills-list {
+      flex-direction: row; /* Change to row layout */
+      flex-wrap: wrap; /* Allow wrapping */
+      gap: 40px; /* Increase gap */
+  }
+
+  .softskill-item {
+      width: calc(30% - 40px); /* Set width for items */
+  }
+}
+
+/* Responsive layout for medium screens */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .softskills-title {
+      font-size: 2rem; /* Adjust title size */
+  }
+
+  .softskills-list {
+      flex-direction: row; /* Change to row layout */
+      flex-wrap: wrap; /* Allow wrapping */
+      gap: 30px; /* Adjust gap */
+  }
+
+  .softskill-item {
+      width: calc(45% - 30px); /* Set width for items */
+  }
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 767px) {
+  .softskills-title {
+      font-size: 1.8rem; /* Further adjust title size */
+  }
+
+  .softskills-list {
+      flex-direction: column; /* Stack items vertically */
+      gap: 20px; /* Reduce gap */
+  }
+
+  .softskill-item {
+      width: 100%; /* Full width for items */
+      padding: 15px; /* Adjust padding */
+  }
+}
+
+/* Responsive layout for extra small screens */
+@media (max-width: 480px) {
+  .softskills-title {
+      font-size: 1.5rem; /* Further reduce title size */
+  }
+
+  .softskill-image {
+      width: 80px; /* Reduce image size */
+  }
+
+  .softskill-item {
+      padding: 10px; /* Further adjust padding */
+  }
+
+  .speech-bubble {
+      font-size: 0.9rem; /* Reduce font size for speech bubble */
+  }
+}

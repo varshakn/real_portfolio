@@ -97,3 +97,61 @@
   .experience-square.active .experience-details {
     animation: fadeIn 0.4s ease-out forwards;
   }
+
+/* Responsive layout for large screens */
+@media (min-width: 1200px) {
+  .experience-section h2 {
+      font-size: 3rem; /* Increase heading size */
+  }
+
+  .experience-square {
+      max-width: 1200px; /* Limit width for large screens */
+      margin: 0 auto; /* Center the square */
+  }
+}
+
+/* Responsive layout for medium screens */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .experience-section {
+      margin-right: 0;
+  }
+
+  .experience-section h2 {
+      font-size: 2.2rem; /* Adjust heading size */
+  }
+
+  .experience-square {
+      max-width: 900px; /* Limit width for medium screens */
+      margin: 0 auto; /* Center the square */
+  }
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 767px) {
+  .experience-section h2 {
+      font-size: 1.8rem; /* Adjust heading size */
+  }
+
+  .experience-square {
+      padding: 20px; /* Adjust padding */
+  }
+
+  .experience-details {
+      padding: 20px; /* Adjust padding */
+  }
+}
+
+/* Responsive layout for extra small screens */
+@media (max-width: 480px) {
+  .experience-section h2 {
+      font-size: 1.5rem; /* Further adjust heading size */
+  }
+
+  .experience-square {
+      padding: 15px; /* Further adjust padding */
+  }
+
+  .experience-details {
+      padding: 15px; /* Further adjust padding */
+  }
+}
