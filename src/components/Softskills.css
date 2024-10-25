@@ -61,41 +61,24 @@
     color: #fff;
   }
 
-/* Responsive layout for large screens */
-@media (min-width: 1200px) {
-  .softskills-title {
-      font-size: 3rem; /* Increase title size for large screens */
-  }
-
-  .softskills-list {
-      flex-direction: row; /* Change to row layout */
-      flex-wrap: wrap; /* Allow wrapping */
-      gap: 40px; /* Increase gap */
-  }
-
-  .softskill-item {
-      width: calc(30% - 40px); /* Set width for items */
-  }
-}
-
-/* Responsive layout for medium screens */
+/* Responsive layout for medium screens (tablets) */
 @media (max-width: 1199px) and (min-width: 768px) {
   .softskills-title {
-      font-size: 2rem; /* Adjust title size */
+      font-size: 2rem; /* Adjust title size for tablets */
   }
 
   .softskills-list {
       flex-direction: row; /* Change to row layout */
       flex-wrap: wrap; /* Allow wrapping */
-      gap: 30px; /* Adjust gap */
+      gap: 20px; /* Adjust gap */
   }
 
   .softskill-item {
-      width: calc(45% - 30px); /* Set width for items */
+      width: calc(45% - 20px); /* Adjust width for items on tablets */
   }
 }
 
-/* Responsive layout for small screens */
+/* Responsive layout for small screens (mobile) */
 @media (max-width: 767px) {
   .softskills-title {
       font-size: 1.8rem; /* Further adjust title size */
@@ -110,23 +93,12 @@
       width: 100%; /* Full width for items */
       padding: 15px; /* Adjust padding */
   }
-}
-
-/* Responsive layout for extra small screens */
-@media (max-width: 480px) {
-  .softskills-title {
-      font-size: 1.5rem; /* Further reduce title size */
-  }
 
   .softskill-image {
-      width: 80px; /* Reduce image size */
-  }
-
-  .softskill-item {
-      padding: 10px; /* Further adjust padding */
+      width: 80px; /* Reduce image size for mobile */
   }
 
   .speech-bubble {
-      font-size: 0.9rem; /* Reduce font size for speech bubble */
-  }
+    font-size: 0.9rem; /* Reduce font size for speech bubble */
+}
 }
