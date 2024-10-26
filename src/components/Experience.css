@@ -98,37 +98,3 @@
     animation: fadeIn 0.4s ease-out forwards;
   }
 
-/* Responsive layout for large screens */
-@media (min-width: 1200px) {
-  .experience-section h2 {
-      font-size: 3rem; /* Increase heading size for large screens */
-  }
-
-  .experience-square {
-      width: calc(30% - 40px); /* Set width for items */
-  }
-}
-
-/* Responsive layout for medium screens (tablets) */
-@media (max-width: 1199px) and (min-width: 768px) {
-  .experience-section h2 {
-      font-size: 2.2rem; /* Adjust heading size */
-  }
-
-  .experience-square {
-      width: calc(45% - 40px); /* Adjust width for tablets */
-  }
-}
-
-/* Responsive layout for small screens (mobile) */
-@media (max-width: 767px) {
-  .experience-section h2 {
-      font-size: 1.8rem; /* Further adjust heading size */
-  }
-
-  .experience-square {
-      width: 90%; /* Full width for items */
-      margin: 0 auto; /* Center items */
-      padding: 15px; /* Adjust padding */
-  }
-}
