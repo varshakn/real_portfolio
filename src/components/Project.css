@@ -62,4 +62,57 @@
     line-height: 1.6; /* Line height for better readability */
   }
   
-  
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem; /* Scale down heading font size */
+  }
+
+  .projects-section {
+    padding: 3rem 0;
+  }
+
+  .projects-container {
+    gap: 1rem; /* Reduce gap for smaller screens */
+  }
+
+  .project-box {
+    font-size: 0.8rem; /* Adjust font size for readability */
+  }
+
+  .project-details-container {
+    padding: 1.5rem;
+  }
+
+  .project-details {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .projects-section {
+    padding: 2rem 0;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+  }
+
+  .project-box {
+    font-size: 0.75rem;
+    padding: 0.4rem;
+  }
+
+  .project-details-container {
+    padding: 1rem;
+  }
+
+  .project-details {
+    font-size: 0.8rem;
+  }
+}  

@@ -63,3 +63,25 @@ section {
     transform: rotateY(180deg);
   }
 
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+  .education-title {
+      font-size: 1.5rem; /* Reduce font size for mobile */
+  }
+
+  .education-container {
+      gap: 20px; /* Reduce space between items */
+  }
+
+  .education-item {
+      width: 100%; /* Full width on mobile */
+      max-width: 300px; /* Limit max width for better appearance */
+      height: 200px; /* Reduce height on mobile */
+  }
+
+  .education-front,
+  .education-back {
+      padding: 20px; /* Reduce padding */
+      font-size: 0.9rem; /* Adjust font size for readability */
+  }
+}

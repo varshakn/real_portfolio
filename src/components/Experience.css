@@ -98,3 +98,20 @@
     animation: fadeIn 0.4s ease-out forwards;
   }
 
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+  .experience-section h2 {
+      font-size: 1.8rem; /* Reduce font size */
+      margin-bottom: 20px;
+  }
+
+  .experience-square {
+      padding: 15px; /* Reduce padding */
+      width: 100%; /* Full width on mobile */
+  }
+
+  .experience-details {
+      padding: 15px; /* Adjust padding for smaller screens */
+      font-size: 0.9rem; /* Adjust font size for readability */
+  }
+}

@@ -31,3 +31,23 @@
     text-decoration: underline;
 }
 
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+    #contact {
+        padding: 20px; /* Reduce padding on smaller screens */
+        margin: 30px 0; /* Adjust margin to avoid large gaps */
+    }
+
+    #contact h2 {
+        font-size: 2rem; /* Reduce font size of heading */
+        margin-bottom: 15px; /* Slightly reduce spacing */
+    }
+
+    #contact p {
+        font-size: 1rem; /* Smaller font size for paragraph text */
+    }
+
+    #contact {
+        text-align: center; /* Center text for better readability on mobile */
+    }
+}

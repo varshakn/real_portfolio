@@ -64,6 +64,49 @@
   height: 40px; /* Adjust height as needed */
 }
 
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .skills-title {
+    font-size: 2rem; /* Reduce title font size */
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust columns for smaller screens */
+    gap: 20px 10px; /* Reduce gap for better spacing */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .skills-box {
+    padding: 15px; /* Adjust padding for boxes */
+    font-size: 1rem; /* Scale down font size */
+  }
+
+  .dino-image {
+    width: 40px; /* Smaller dino size */
+    bottom: 80px; /* Adjust position if necessary */
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-title {
+    font-size: 1.5rem; /* Further reduce title font size */
+    margin-bottom: 15px; /* Reduce space below title */
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Single column on very small screens */
+  }
+
+  .skills-box {
+    padding: 10px; /* Further adjust padding for boxes */
+    font-size: 0.9rem; /* Scale down font size */
+  }
+
+  .dino-image {
+    width: 30px; /* Even smaller dino size */
+    bottom: 70px; /* Adjust position if necessary */
+  }
+}
 
 
 

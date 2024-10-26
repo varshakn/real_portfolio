@@ -58,3 +58,36 @@
     margin-bottom: 10px;
   }
 
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+  #certifications {
+      padding: 30px 20px; /* Reduce padding */
+  }
+
+  .certifications-title {
+      font-size: 1.8rem; /* Smaller font size for title */
+      margin-bottom: 20px;
+  }
+
+  .certifications-content {
+      flex-direction: column; /* Stack image and details vertically */
+      align-items: center;
+      height: auto; /* Remove fixed height */
+  }
+
+  .certification-image {
+      position: relative;
+      left: 0;
+      transform: translateX(0); /* Reset transform */
+      width: 100%; /* Full width on mobile */
+      max-width: 250px; /* Limit max width */
+      margin-bottom: 20px; /* Add space below image */
+  }
+
+  .certification-details {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+      text-align: center; /* Center text for better mobile readability */
+      padding-left: 0; /* Remove padding on smaller screens */
+      opacity: 1; /* Make details always visible on mobile */
+  }
+}
