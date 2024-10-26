@@ -106,14 +106,14 @@
   }
 
   .experience-square {
-      padding: 40px; /* Adjust padding to make the boxes more rectangular */
-      width: 90%; /* Use 90% of the screen width on mobile */
+      padding: 90px; /* Adjust padding to make the boxes more rectangular */
+      width: 150%; /* Use 90% of the screen width on mobile */
       margin: 0 auto; /* Center the boxes */
       aspect-ratio: 3 / 1; /* Define a rectangular aspect ratio */
   }
 
   .experience-details {
-      padding: 15px; /* Adjust padding for smaller screens */
+      padding: 90px; /* Adjust padding for smaller screens */
       font-size: 0.9rem; /* Adjust font size for readability */
   }
 }
