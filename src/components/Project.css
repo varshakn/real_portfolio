@@ -62,57 +62,41 @@
     line-height: 1.6; /* Line height for better readability */
   }
   
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-  h2 {
-    font-size: 1.5rem; /* Scale down heading font size */
+  @media (max-width: 768px) {
+    .experience-section {
+      padding: 3rem 0; /* Adjust padding for mobile */
+    }
+  
+    .experience-square {
+      width: 90%; /* Use 90% of the screen width on mobile */
+      aspect-ratio: 1 / 1; /* Set square aspect ratio */
+      padding: 0; /* Remove padding to maintain square shape */
+      margin: 0 auto; /* Center the boxes */
+      font-size: 0.8rem; /* Adjust font size for readability */
+    }
+  
+    .experience-details {
+      padding: 1.5rem; /* Adjust padding for experience details */
+      font-size: 0.85rem; /* Adjust font size for readability */
+    }
   }
-
-  .projects-section {
-    padding: 3rem 0;
+  
+  @media (max-width: 480px) {
+    .experience-section h2 {
+      font-size: 1.2rem; /* Scale down heading font size */
+      margin-bottom: 1.5rem; /* Space below heading */
+    }
+  
+    .experience-square {
+      padding: 0; /* Remove padding for square shape */
+      width: 90%; /* Full width on very small screens */
+      aspect-ratio: 1 / 1; /* Set square aspect ratio */
+      margin: 0 auto; /* Center the boxes */
+      font-size: 0.75rem; /* Adjust font size to match project boxes */
+    }
+  
+    .experience-details {
+      padding: 1rem; /* Adjust padding for experience details */
+      font-size: 0.8rem; /* Adjust font size for readability */
+    }
   }
-
-  .projects-container {
-    gap: 1rem; /* Reduce gap for smaller screens */
-  }
-
-  .project-box {
-    font-size: 0.8rem; /* Adjust font size for readability */
-  }
-
-  .project-details-container {
-    padding: 1.5rem;
-  }
-
-  .project-details {
-    font-size: 0.85rem;
-  }
-}
-
-@media (max-width: 480px) {
-  h2 {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .projects-section {
-    padding: 2rem 0;
-  }
-
-  .projects-container {
-    grid-template-columns: 1fr; /* Single column on very small screens */
-  }
-
-  .project-box {
-    font-size: 0.75rem;
-    padding: 0.4rem;
-  }
-
-  .project-details-container {
-    padding: 1rem;
-  }
-
-  .project-details {
-    font-size: 0.8rem;
-  }
-}  
