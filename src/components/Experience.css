@@ -116,6 +116,7 @@
       width: 95%; /* Full width with slight margins on mobile */
       max-width: 1000px; /* Set a maximum width for larger screens */
       bottom: auto;
+      margin-right: 10px;
   }
 
   .experience-details {
