@@ -98,22 +98,28 @@
     animation: fadeIn 0.4s ease-out forwards;
   }
 
-  /* Responsive adjustments for mobile screens */
+/* Responsive adjustments for mobile screens */
 @media (max-width: 768px) {
+  .experience-section {
+      width: 100%; /* Ensure the section takes full width */
+      padding: 3rem 0; /* Adjust padding for the section */
+      margin: 0 auto; /* Center the section */
+  }
+
   .experience-section h2 {
       font-size: 1.8rem; /* Reduce font size for heading */
   }
 
   .experience-square {
-      padding: 100px; /* Adjust padding */
+      padding: 20px; /* Adjust padding for better spacing */
       margin: 10px auto; /* Center the boxes and add margin */
       width: 95%; /* Full width with slight margins on mobile */
+      max-width: 1000px; /* Set a maximum width for larger screens */
       bottom: auto;
   }
 
   .experience-details {
-      padding: 100px; /* Adjust padding for experience details */
+      padding: 20px; /* Adjust padding for experience details */
       font-size: 0.9rem; /* Adjust font size for readability */
   }
 }
-
