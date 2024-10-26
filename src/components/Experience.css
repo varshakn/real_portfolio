@@ -99,27 +99,46 @@
   }
 
   @media (max-width: 768px) {
-    h2 {
-      font-size: 1.5rem; /* Scale down heading font size */
-    }
-  
     .experience-section {
-      padding: 3rem 0;
+      padding: 3rem 0; /* Adjust padding for mobile */
+      margin: 0 auto; /* Center the section */
+      width: 100%; /* Ensure it takes full width */
     }
   
-    .experience-container {
-      gap: 1rem; /* Reduce gap for smaller screens */
-    }
-  
-    .experience-box {
+    .experience-square {
+      width: 90%; /* Use 90% of the screen width on mobile */
+      aspect-ratio: 1 / 1; /* Set square aspect ratio */
+      padding: 0; /* Remove padding to maintain square shape */
+      margin: 0 auto; /* Center the boxes */
       font-size: 0.8rem; /* Adjust font size for readability */
     }
   
-    .experience-details-container {
-      padding: 1.5rem;
+    .experience-details {
+      padding: 1.5rem; /* Adjust padding for experience details */
+      font-size: 0.85rem; /* Adjust font size for readability */
+      display: block; /* Ensure details are displayed */
+      opacity: 1; /* Ensure details are visible */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .experience-section h2 {
+      font-size: 1.2rem; /* Scale down heading font size */
+      margin-bottom: 1.5rem; /* Space below heading */
+    }
+  
+    .experience-square {
+      padding: 0; /* Remove padding for square shape */
+      width: 90%; /* Full width on very small screens */
+      aspect-ratio: 1 / 1; /* Set square aspect ratio */
+      margin: 0 auto; /* Center the boxes */
+      font-size: 0.75rem; /* Adjust font size to match project boxes */
     }
   
     .experience-details {
-      font-size: 0.85rem;
+      padding: 1rem; /* Adjust padding for experience details */
+      font-size: 0.8rem; /* Adjust font size for readability */
+      display: block; /* Ensure details are displayed */
+      opacity: 1; /* Ensure details are visible */
     }
   }
