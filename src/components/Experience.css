@@ -113,10 +113,11 @@
   .experience-square {
       padding: 20px; /* Adjust padding for better spacing */
       margin: 10px auto; /* Center the boxes and add margin */
-      width: 95%; /* Full width with slight margins on mobile */
+      width: calc(95% - 20px); /* Full width with slight margins on mobile */
       max-width: 1000px; /* Set a maximum width for larger screens */
       bottom: auto;
       margin-right: 10px;
+      box-sizing: border-box;
   }
 
   .experience-details {
