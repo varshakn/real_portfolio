@@ -108,6 +108,7 @@
       padding: 100px; /* Adjust padding */
       margin: 10px auto; /* Center the boxes and add margin */
       width: 95%; /* Full width with slight margins on mobile */
+      bottom: auto;
   }
 
   .experience-details {
