@@ -106,9 +106,10 @@
   }
 
   .experience-square {
-      padding: 90px; /* Keep padding for a bigger box */
+      padding: 40px; /* Adjust padding to make the boxes more rectangular */
       width: 90%; /* Use 90% of the screen width on mobile */
       margin: 0 auto; /* Center the boxes */
+      aspect-ratio: 3 / 1; /* Define a rectangular aspect ratio */
   }
 
   .experience-details {
