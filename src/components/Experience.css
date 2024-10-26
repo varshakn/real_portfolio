@@ -106,8 +106,9 @@
   }
 
   .experience-square {
-      padding: 15px; /* Reduce padding */
-      width: 100%; /* Full width on mobile */
+      padding: 20px; /* Keep padding for a bigger box */
+      width: 90%; /* Use 90% of the screen width on mobile */
+      margin: 0 auto; /* Center the boxes */
   }
 
   .experience-details {
